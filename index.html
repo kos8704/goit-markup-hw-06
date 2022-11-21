@@ -429,14 +429,12 @@
       
        <div class="footer-subscribe">
           <p class="join">підпишіться на розсилку</p>
-             <div class="footer-mail-send">
-                <div class="mail-field">
-                  <input type="email" class="mail-input" name="mail" id="mail" placeholder="E-mail"/>
-                </div>
-                  <button type="submit" class="footer-button">Підписатися
-                    <svg width="24" height="24"><use href="./images/symbol-defs.svg#icon-send"></use></svg>
-                  </button>
-             </div>
+             <form name="footer-subscribe" class="footer-mail-send">
+                <input type="email" class="mail-input" name="mail" id="mail" placeholder="E-mail"/>
+                   <button type="submit" class="footer-button">Підписатися
+                      <svg width="24" height="24"><use href="./images/symbol-defs.svg#icon-send"></use></svg>
+                   </button>
+             </form>
        </div>
 
       </div>
@@ -482,39 +480,20 @@
                  <textarea name="comment" type="text" class="modal-input modal-textarea" placeholder="Введіть текст"></textarea>
                            
                  <div class="checkline">
-                   
-                  <input id="checkbox-agree" 
-                         value="agree"
-                         name="checkbox-agree"
-                         type="checkbox" 
-                         class="visually-hidden"
-                         required/>
-                   <label for="checkbox-agree" class="checkbox-agree">
-                     <span class="checkbox-icon">Погоджуюся з розсилкою та приймаю 
+                     <input id="checkbox-agree" 
+                           value="agree"
+                           name="checkbox-agree"
+                           type="checkbox" 
+                           class="visually-hidden"
+                           required/>
+                     <label for="checkbox-agree" class="checkbox-agree">
+                       <span class="checkbox-icon">Погоджуюся з розсилкою та приймаю 
                        <a class="modal-form-link" href="">Умови договору</a></span>
-                   
-                  
-                  </label>
-
-
-                 </div>
-
-
-<!--
-  
-                     <span class="checkbox-icon">
-                        <svg class="icon-checked" width="16" height="15"><use href="./--images/symbol-defs.svg#icon-checked"></use>
-                        </svg>
-                     </span>
--->
-
-
-            
-
+                     </label>
+                  </div>
+        
             <button type="submit" class="main-button send-button">Відправити</button>  
           </form>
-
-          
 
     </div>
 </div>
